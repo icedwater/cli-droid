@@ -68,6 +68,23 @@ The `.gitignore` was based on [this project][nub].
    This, hopefully, just drops `bin/` from future executable calls.
    You may have to log out and back in if you set `$PATH` via `.profile`.
 
+## Create and Emulate an Android Virtual Device (AVD)
+
+   1. Use the `avdmanager`, specifying a name and a system image package.
+
+         avdmanager create avd -n $AVDNAME -k $ANDROID_PKG
+
+      This will create a device with the given Android version that can
+      be used with an emulator.
+
+   2. To start the emulator with your virtual device, use the `emulator` tool:
+
+         emulator -avd $AVDNAME # e.g. emulator -avd my_avd_a30
+
+      or you could do it like this:
+
+         emulator @$AVDNAME # e.g. emulator @my_avd_a30
+
 ## Notes
 
   - The [StackOverflow answer][ans] recommends you keep the emulator on in
