@@ -1,0 +1,33 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# more caches and things from deploy #
+war/WEB-INF/deploy/
+war/WEB-INF/classes/
+
+# other directories
+docs/
+target/
+build/
+out/
+
+# gradle-related
+.gradle
+gradlew.bat
+
+# vim temp files
+.*.sw?
