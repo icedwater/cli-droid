@@ -68,6 +68,16 @@ The `.gitignore` was based on [this project][nub].
    This, hopefully, just drops `bin/` from future executable calls.
    You may have to log out and back in if you set `$PATH` via `.profile`.
 
+## Notes
+
+  - The [StackOverflow answer][ans] recommends you keep the emulator on in
+    the background as you code; unless you have at least 8GB RAM, I don't.
+    It cost me 2.5 of my 4GB just to keep the emulator crawling along.
+
+  - `emulator` expects to be run from `$SDK/tools/`; even if you add it to
+    the `$PATH` somehow, it's hard-coded to look for `../emulator/`.
+
+
 [ans]: https://stackoverflow.com/a/29313378
 [nub]: https://github.com/pubnub/java/blob/master/.gitignore
 [cli]: https://developer.android.com/studio#command-tools
