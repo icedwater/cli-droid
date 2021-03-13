@@ -12,3 +12,5 @@ The `.gitignore` was based on [this project][nub].
 
 [env]: 01-environment.md
 [bnc]: 02-buildapp.md
+[ans]: https://stackoverflow.com/a/29313378
+[nub]: https://github.com/pubnub/java/blob/master/.gitignore
